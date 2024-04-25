@@ -1,0 +1,1393 @@
+1.//This command is used to get basic information about unix   users in your environment//
+.shows the username.
+ user@hahalya:~$ whoami
+user
+2.//Print user identity//
+user@hahalya:~$ id
+uid=1000(user) gid=1000(user) groups=1000(user),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),132(lxd),133(sambashare)
+ 
+ 3.//Show which group user belongs to.
+user@hahalya:~$ groups 
+user adm cdrom sudo dip plugdev lpadmin lxd sambashare.
+
+4.//Chage user passord
+user@hahalya:~$ password
+
+Command 'password' not found, did you mean:
+
+  command '5password' from snap 5password (0.3)
+  command '1password' from snap 1password (8.10.23)
+  command 'assword' from deb assword (0.12.2-1)
+
+See 'snap info <snapname>' for additional versions.
+
+5.//Show history of logins.
+user@hahalya:~$ last
+user     :0           :0               Thu Apr 25 13:37   still logged in
+reboot   system boot  5.15.0-87-generi Thu Apr 25 13:37   still running
+user     :0           :0               Thu Apr 25 12:10 - down   (00:32)
+reboot   system boot  5.15.0-87-generi Thu Apr 25 12:10 - 12:43  (00:32)
+user     :0           :0               Thu Apr 25 10:10 - down   (00:15)
+reboot   system boot  5.15.0-87-generi Thu Apr 25 10:10 - 10:26  (00:15)
+user     :0           :0               Thu Apr 25 08:01 - down   (00:10)
+reboot   system boot  5.15.0-87-generi Thu Apr 25 08:01 - 08:12  (00:10)
+user     :0           :0               Wed Apr 24 20:10 - down   (01:29)
+reboot   system boot  5.15.0-87-generi Wed Apr 24 20:10 - 21:39  (01:29)
+user     :0           :0               Wed Apr 24 14:15 - down   (01:00)
+reboot   system boot  5.15.0-87-generi Wed Apr 24 14:15 - 15:15  (01:00)
+user     :0           :0               Wed Apr 24 14:02 - down   (00:01)
+reboot   system boot  5.15.0-87-generi Wed Apr 24 14:02 - 14:03  (00:01)
+user     :0           :0               Wed Apr 24 11:17 - down   (01:14)
+reboot   system boot  5.15.0-87-generi Wed Apr 24 11:17 - 12:32  (01:14)
+user     :0           :0               Wed Apr 24 10:09 - down   (01:08)
+reboot   system boot  5.15.0-87-generi Wed Apr 24 10:09 - 11:17  (01:08)
+user     :0           :0               Tue Apr 23 20:25 - down   (00:06)
+reboot   system boot  5.15.0-87-generi Tue Apr 23 20:25 - 20:32  (00:06)
+user     :0           :0               Mon Apr 22 22:32 - down   (00:10)
+reboot   system boot  5.15.0-87-generi Mon Apr 22 22:32 - 22:43  (00:10)
+user     :0           :0               Mon Apr 22 22:23 - down   (00:07)
+reboot   system boot  5.15.0-87-generi Mon Apr 22 22:23 - 22:31  (00:07)
+user     :0           :0               Mon Apr 22 11:24 - down   (00:40)
+reboot   system boot  5.15.0-87-generi Mon Apr 22 11:24 - 12:05  (00:41)
+user     :0           :0               Sun Apr 21 21:58 - down   (00:27)
+reboot   system boot  5.15.0-87-generi Sun Apr 21 21:58 - 22:26  (00:27)
+user     :0           :0               Sun Apr 21 13:24 - down   (00:14)
+reboot   system boot  5.15.0-87-generi Sun Apr 21 13:24 - 13:39  (00:14)
+user     :0           :0               Sat Apr 20 23:24 - down   (00:01)
+reboot   system boot  5.15.0-87-generi Sat Apr 20 23:24 - 23:25  (00:01)
+user     :0           :0               Sat Apr 20 21:31 - down   (01:52)
+reboot   system boot  5.15.0-87-generi Sat Apr 20 21:31 - 23:23  (01:52)
+user     :0           :0               Sat Apr 20 20:17 - down   (01:08)
+reboot   system boot  5.15.0-87-generi Sat Apr 20 20:17 - 21:25  (01:08)
+user     :0           :0               Sat Apr 20 14:46 - down   (00:50)
+reboot   system boot  5.15.0-87-generi Sat Apr 20 14:46 - 15:36  (00:50)
+user     :0           :0               Fri Apr 19 14:05 - down   (02:50)
+reboot   system boot  5.15.0-87-generi Fri Apr 19 14:05 - 16:55  (02:50)
+user     :0           :0               Thu Apr 18 16:17 - down   (00:40)
+reboot   system boot  5.15.0-87-generi Thu Apr 18 16:17 - 16:57  (00:40)
+user     :0           :0               Thu Apr 18 14:13 - down   (01:51)
+reboot   system boot  5.15.0-87-generi Thu Apr 18 14:13 - 16:05  (01:51)
+user     :0           :0               Tue Apr 16 08:37 - down   (00:03)
+reboot   system boot  5.15.0-87-generi Tue Apr 16 08:37 - 08:41  (00:03)
+user     :0           :0               Tue Apr 16 06:20 - down   (00:01)
+reboot   system boot  5.15.0-87-generi Tue Apr 16 06:20 - 06:21  (00:01)
+user     :0           :0               Tue Apr 16 05:48 - down   (00:02)
+reboot   system boot  5.15.0-87-generi Tue Apr 16 05:48 - 05:51  (00:02)
+user     :0           :0               Mon Apr 15 23:50 - down   (05:51)
+reboot   system boot  5.15.0-87-generi Mon Apr 15 23:50 - 05:42  (05:51)
+user     :0           :0               Mon Apr 15 21:30 - down   (00:30)
+reboot   system boot  5.15.0-87-generi Mon Apr 15 21:30 - 22:00  (00:30)
+user     :0           :0               Mon Apr 15 21:19 - down   (00:04)
+reboot   system boot  5.15.0-87-generi Mon Apr 15 21:19 - 21:23  (00:04)
+user     :0           :0               Mon Apr 15 10:45 - down   (00:15)
+reboot   system boot  5.15.0-87-generi Mon Apr 15 10:45 - 11:00  (00:15)
+user     :0           :0               Mon Apr 15 08:57 - down   (01:34)
+reboot   system boot  5.15.0-87-generi Mon Apr 15 08:57 - 10:31  (01:34)
+user     :0           :0               Mon Apr 15 05:10 - down   (01:21)
+reboot   system boot  5.15.0-87-generi Mon Apr 15 05:09 - 06:31  (01:21)
+user     :0           :0               Sun Apr 14 23:15 - down   (00:20)
+reboot   system boot  5.15.0-87-generi Sun Apr 14 23:15 - 23:36  (00:20)
+user     :0           :0               Sun Apr 14 22:38 - down   (00:27)
+reboot   system boot  5.15.0-87-generi Sun Apr 14 22:38 - 23:06  (00:27)
+user     :0           :0               Sun Apr 14 17:38 - down   (01:12)
+reboot   system boot  5.15.0-87-generi Sun Apr 14 17:38 - 18:50  (01:12)
+user     :0           :0               Sun Apr 14 13:48 - down   (02:51)
+reboot   system boot  5.15.0-87-generi Sun Apr 14 13:48 - 16:39  (02:51)
+user     :0           :0               Sun Apr 14 11:17 - down   (00:28)
+reboot   system boot  5.15.0-87-generi Sun Apr 14 11:17 - 11:45  (00:28)
+user     :0           :0               Sun Apr 14 09:32 - down   (01:13)
+reboot   system boot  5.15.0-87-generi Sun Apr 14 09:32 - 10:45  (01:13)
+user     :0           :0               Sun Apr 14 09:21 - down   (00:06)
+reboot   system boot  5.15.0-87-generi Sun Apr 14 09:21 - 09:27  (00:06)
+user     :0           :0               Sun Apr 14 09:19 - down   (00:01)
+reboot   system boot  5.15.0-87-generi Sun Apr 14 09:19 - 09:20  (00:01)
+user     :0           :0               Sun Apr 14 09:03 - down   (00:06)
+reboot   system boot  5.15.0-87-generi Sun Apr 14 09:03 - 09:09  (00:06)
+user     :0           :0               Sun Apr 14 08:59 - down   (00:02)
+reboot   system boot  5.15.0-87-generi Sun Apr 14 08:59 - 09:01  (00:02)
+user     :0           :0               Sat Apr 13 22:17 - down   (00:37)
+reboot   system boot  5.15.0-87-generi Sat Apr 13 22:17 - 22:54  (00:37)
+user     :0           :0               Sat Apr 13 18:24 - down   (00:28)
+reboot   system boot  5.15.0-87-generi Sat Apr 13 18:24 - 18:52  (00:28)
+user     :0           :0               Sat Apr 13 16:25 - down   (00:20)
+reboot   system boot  5.15.0-87-generi Sat Apr 13 16:25 - 16:46  (00:20)
+user     :0           :0               Sat Apr 13 14:46 - down   (01:33)
+reboot   system boot  5.15.0-87-generi Sat Apr 13 14:46 - 16:20  (01:34)
+user     :0           :0               Sat Apr 13 14:29 - down   (00:11)
+reboot   system boot  5.15.0-87-generi Sat Apr 13 14:28 - 14:40  (00:11)
+user     :0           :0               Wed Apr 10 21:54 - down   (00:12)
+reboot   system boot  5.15.0-87-generi Wed Apr 10 21:54 - 22:07  (00:12)
+user     :0           :0               Wed Apr 10 20:20 - down   (01:08)
+reboot   system boot  5.15.0-87-generi Wed Apr 10 20:20 - 21:29  (01:08)
+user     :0           :0               Wed Apr 10 14:05 - down   (02:40)
+reboot   system boot  5.15.0-87-generi Wed Apr 10 14:05 - 16:46  (02:40)
+user     :0           :0               Wed Apr 10 10:51 - down   (00:18)
+reboot   system boot  5.15.0-87-generi Wed Apr 10 10:51 - 11:09  (00:18)
+user     :0           :0               Wed Apr 10 10:22 - down   (00:12)
+reboot   system boot  5.15.0-87-generi Wed Apr 10 10:22 - 10:34  (00:12)
+user     :0           :0               Tue Apr  9 21:43 - down   (00:02)
+reboot   system boot  5.15.0-87-generi Tue Apr  9 21:43 - 21:46  (00:02)
+user     :0           :0               Tue Apr  9 21:04 - down   (00:01)
+reboot   system boot  5.15.0-87-generi Tue Apr  9 21:04 - 21:05  (00:01)
+user     :0           :0               Tue Apr  9 15:01 - down   (01:15)
+reboot   system boot  5.15.0-87-generi Tue Apr  9 15:01 - 16:17  (01:16)
+user     :0           :0               Mon Apr  8 20:52 - down   (01:27)
+reboot   system boot  5.15.0-87-generi Mon Apr  8 20:52 - 22:20  (01:27)
+user     :0           :0               Mon Apr  8 11:30 - down   (00:46)
+reboot   system boot  5.15.0-87-generi Mon Apr  8 11:30 - 12:17  (00:46)
+user     :0           :0               Mon Apr  8 10:53 - down   (00:25)
+reboot   system boot  5.15.0-87-generi Mon Apr  8 10:53 - 11:18  (00:25)
+user     :0           :0               Sun Apr  7 20:59 - down   (00:08)
+reboot   system boot  5.15.0-87-generi Sun Apr  7 20:59 - 21:08  (00:08)
+user     :0           :0               Sun Apr  7 17:41 - down   (00:04)
+reboot   system boot  5.15.0-87-generi Sun Apr  7 17:41 - 17:46  (00:04)
+user     :0           :0               Sat Apr  6 11:13 - down   (01:25)
+reboot   system boot  5.15.0-87-generi Sat Apr  6 11:13 - 12:39  (01:25)
+user     :0           :0               Thu Apr  4 21:28 - down   (01:29)
+reboot   system boot  5.15.0-87-generi Thu Apr  4 21:28 - 22:57  (01:29)
+user     :0           :0               Thu Apr  4 13:29 - down   (03:25)
+reboot   system boot  5.15.0-87-generi Thu Apr  4 13:29 - 16:54  (03:25)
+user     :0           :0               Thu Apr  4 08:25 - down   (00:15)
+reboot   system boot  5.15.0-87-generi Thu Apr  4 08:25 - 08:41  (00:15)
+user     :0           :0               Wed Apr  3 20:25 - down   (01:29)
+reboot   system boot  5.15.0-87-generi Wed Apr  3 20:25 - 21:54  (01:29)
+user     :0           :0               Wed Apr  3 17:55 - down   (00:36)
+reboot   system boot  5.15.0-87-generi Wed Apr  3 17:55 - 18:32  (00:36)
+user     :0           :0               Wed Apr  3 14:11 - down   (02:27)
+reboot   system boot  5.15.0-87-generi Wed Apr  3 14:11 - 16:39  (02:27)
+user     :0           :0               Mon Apr  1 19:40 - down   (01:35)
+reboot   system boot  5.15.0-87-generi Mon Apr  1 19:40 - 21:16  (01:35)
+user     :0           :0               Mon Apr  1 11:13 - down   (00:59)
+reboot   system boot  5.15.0-87-generi Mon Apr  1 11:13 - 12:12  (00:59)
+user     :0           :0               Sun Mar 31 20:38 - down   (00:25)
+reboot   system boot  5.15.0-87-generi Sun Mar 31 20:38 - 21:03  (00:25)
+user     :0           :0               Sun Mar 31 18:03 - down   (01:23)
+reboot   system boot  5.15.0-87-generi Sun Mar 31 18:03 - 19:26  (01:23)
+user     :0           :0               Sun Mar 31 17:21 - crash  (00:41)
+reboot   system boot  5.15.0-87-generi Sun Mar 31 17:21 - 19:26  (02:04)
+user     :0           :0               Sat Mar 30 21:05 - down   (01:52)
+reboot   system boot  5.15.0-87-generi Sat Mar 30 21:05 - 22:57  (01:52)
+user     :0           :0               Sat Mar 30 15:03 - down   (00:06)
+reboot   system boot  5.15.0-87-generi Sat Mar 30 15:03 - 15:10  (00:06)
+user     :0           :0               Fri Mar 29 21:13 - down   (02:02)
+reboot   system boot  5.15.0-87-generi Fri Mar 29 21:13 - 23:15  (02:02)
+user     :0           :0               Fri Mar 29 20:54 - down   (00:02)
+reboot   system boot  5.15.0-87-generi Fri Mar 29 20:54 - 20:57  (00:02)
+user     :0           :0               Thu Mar 28 16:29 - down   (00:19)
+reboot   system boot  5.15.0-87-generi Thu Mar 28 16:29 - 16:48  (00:19)
+user     :0           :0               Thu Mar 28 16:23 - down   (00:05)
+reboot   system boot  5.15.0-87-generi Thu Mar 28 16:23 - 16:29  (00:06)
+user     :0           :0               Thu Mar 28 14:09 - down   (02:09)
+reboot   system boot  5.15.0-87-generi Thu Mar 28 14:08 - 16:18  (02:09)
+user     :0           :0               Wed Mar 27 20:00 - down   (01:14)
+reboot   system boot  5.15.0-87-generi Wed Mar 27 20:00 - 21:14  (01:14)
+user     :0           :0               Wed Mar 27 14:15 - down   (02:40)
+reboot   system boot  5.15.0-87-generi Wed Mar 27 14:15 - 16:55  (02:40)
+user     :0           :0               Wed Mar 27 11:12 - down   (00:54)
+reboot   system boot  5.15.0-87-generi Wed Mar 27 11:12 - 12:06  (00:54)
+user     :0           :0               Wed Mar 27 10:08 - down   (00:09)
+reboot   system boot  5.15.0-87-generi Wed Mar 27 10:08 - 10:18  (00:09)
+user     :0           :0               Tue Mar 26 20:13 - down   (01:03)
+reboot   system boot  5.15.0-87-generi Tue Mar 26 20:13 - 21:17  (01:03)
+user     :0           :0               Sat Mar 23 15:39 - down   (00:10)
+reboot   system boot  5.15.0-87-generi Sat Mar 23 15:39 - 15:49  (00:10)
+user     :0           :0               Fri Mar 22 14:15 - down   (02:43)
+reboot   system boot  5.15.0-87-generi Fri Mar 22 14:15 - 16:59  (02:43)
+user     :0           :0               Thu Mar 21 15:53 - down   (00:55)
+reboot   system boot  5.15.0-87-generi Thu Mar 21 15:53 - 16:48  (00:55)
+user     :0           :0               Wed Mar 20 15:02 - down   (00:16)
+reboot   system boot  5.15.0-87-generi Wed Mar 20 15:02 - 15:19  (00:16)
+user     :0           :0               Wed Mar 20 14:14 - down   (00:39)
+reboot   system boot  5.15.0-87-generi Wed Mar 20 14:14 - 14:53  (00:39)
+user     :0           :0               Wed Mar 20 10:57 - down   (01:24)
+reboot   system boot  5.15.0-87-generi Wed Mar 20 10:57 - 12:21  (01:24)
+user     :0           :0               Wed Mar 20 10:35 - down   (00:01)
+reboot   system boot  5.15.0-87-generi Wed Mar 20 10:35 - 10:36  (00:01)
+user     :0           :0               Wed Mar 20 10:15 - down   (00:11)
+reboot   system boot  5.15.0-87-generi Wed Mar 20 10:15 - 10:27  (00:11)
+user     :0           :0               Wed Mar 20 06:41 - down   (00:01)
+reboot   system boot  5.15.0-87-generi Wed Mar 20 06:41 - 06:42  (00:01)
+user     :0           :0               Tue Mar 19 14:10 - down   (01:35)
+reboot   system boot  5.15.0-87-generi Tue Mar 19 14:10 - 15:45  (01:35)
+user     :0           :0               Tue Mar 19 07:47 - down   (00:03)
+reboot   system boot  5.15.0-87-generi Tue Mar 19 07:47 - 07:50  (00:03)
+user     :0           :0               Mon Mar 18 11:27 - down   (00:36)
+reboot   system boot  5.15.0-87-generi Mon Mar 18 11:27 - 12:03  (00:36)
+user     :0           :0               Mon Mar 18 11:00 - down   (00:07)
+reboot   system boot  5.15.0-87-generi Mon Mar 18 11:00 - 11:07  (00:07)
+user     :0           :0               Sun Mar 17 22:38 - down   (01:34)
+reboot   system boot  5.15.0-87-generi Sun Mar 17 22:38 - 00:13  (01:34)
+user     :0           :0               Sun Mar 17 20:53 - down   (01:21)
+reboot   system boot  5.15.0-87-generi Sun Mar 17 20:53 - 22:14  (01:21)
+user     :0           :0               Sat Mar 16 08:10 - down   (00:27)
+reboot   system boot  5.15.0-87-generi Sat Mar 16 08:10 - 08:38  (00:27)
+user     :0           :0               Sat Mar 16 06:43 - down   (00:43)
+reboot   system boot  5.15.0-87-generi Sat Mar 16 06:43 - 07:26  (00:43)
+user     :0           :0               Sat Mar 16 05:01 - down   (00:15)
+reboot   system boot  5.15.0-87-generi Sat Mar 16 05:01 - 05:17  (00:15)
+user     :0           :0               Sat Mar 16 03:56 - down   (00:49)
+reboot   system boot  5.15.0-87-generi Sat Mar 16 03:56 - 04:45  (00:49)
+user     :0           :0               Fri Mar 15 22:19 - down   (00:01)
+reboot   system boot  5.15.0-87-generi Fri Mar 15 22:19 - 22:20  (00:01)
+user     :0           :0               Fri Mar 15 20:16 - down   (00:49)
+reboot   system boot  5.15.0-87-generi Fri Mar 15 20:16 - 21:06  (00:49)
+user     :0           :0               Fri Mar 15 17:32 - down   (01:39)
+reboot   system boot  5.15.0-87-generi Fri Mar 15 17:32 - 19:11  (01:39)
+user     :0           :0               Fri Mar 15 16:02 - down   (00:43)
+reboot   system boot  5.15.0-87-generi Fri Mar 15 16:02 - 16:46  (00:43)
+user     :0           :0               Fri Mar 15 13:56 - down   (01:53)
+reboot   system boot  5.15.0-87-generi Fri Mar 15 13:56 - 15:49  (01:53)
+user     :0           :0               Fri Mar 15 08:39 - down   (00:00)
+reboot   system boot  5.15.0-87-generi Fri Mar 15 08:39 - 08:40  (00:00)
+user     :0           :0               Fri Mar 15 06:46 - down   (01:46)
+reboot   system boot  5.15.0-87-generi Fri Mar 15 06:46 - 08:33  (01:46)
+user     :0           :0               Fri Mar 15 05:02 - down   (00:29)
+reboot   system boot  5.15.0-87-generi Fri Mar 15 05:02 - 05:32  (00:29)
+user     :0           :0               Fri Mar 15 04:40 - down   (00:16)
+reboot   system boot  5.15.0-87-generi Fri Mar 15 04:40 - 04:56  (00:16)
+user     :0           :0               Thu Mar 14 22:50 - down   (00:55)
+reboot   system boot  5.15.0-87-generi Thu Mar 14 22:50 - 23:46  (00:55)
+user     :0           :0               Thu Mar 14 21:41 - down   (00:53)
+reboot   system boot  5.15.0-87-generi Thu Mar 14 21:41 - 22:34  (00:53)
+user     :0           :0               Thu Mar 14 20:37 - down   (00:02)
+reboot   system boot  5.15.0-87-generi Thu Mar 14 20:37 - 20:40  (00:02)
+user     :0           :0               Thu Mar 14 20:06 - down   (00:07)
+reboot   system boot  5.15.0-87-generi Thu Mar 14 20:06 - 20:14  (00:07)
+user     :0           :0               Thu Mar 14 17:38 - down   (01:02)
+reboot   system boot  5.15.0-87-generi Thu Mar 14 17:38 - 18:41  (01:02)
+user     :0           :0               Thu Mar 14 15:46 - down   (01:03)
+reboot   system boot  5.15.0-87-generi Thu Mar 14 15:46 - 16:49  (01:03)
+user     :0           :0               Thu Mar 14 15:25 - down   (00:14)
+reboot   system boot  5.15.0-87-generi Thu Mar 14 15:25 - 15:40  (00:14)
+user     :0           :0               Thu Mar 14 14:05 - down   (01:15)
+reboot   system boot  5.15.0-87-generi Thu Mar 14 14:05 - 15:20  (01:15)
+user     :0           :0               Thu Mar 14 10:55 - down   (01:32)
+reboot   system boot  5.15.0-87-generi Thu Mar 14 10:55 - 12:27  (01:32)
+user     :0           :0               Thu Mar 14 09:07 - down   (01:39)
+reboot   system boot  5.15.0-87-generi Thu Mar 14 09:07 - 10:46  (01:39)
+user     :0           :0               Wed Mar 13 03:32 - down   (01:53)
+reboot   system boot  5.15.0-87-generi Wed Mar 13 03:32 - 05:25  (01:53)
+user     :0           :0               Tue Mar 12 20:58 - down   (00:50)
+reboot   system boot  5.15.0-87-generi Tue Mar 12 20:58 - 21:49  (00:50)
+user     :0           :0               Tue Mar 12 08:28 - down   (00:03)
+reboot   system boot  5.15.0-87-generi Tue Mar 12 08:28 - 08:32  (00:03)
+user     :0           :0               Tue Mar 12 08:01 - down   (00:21)
+reboot   system boot  5.15.0-87-generi Tue Mar 12 08:01 - 08:22  (00:21)
+user     :0           :0               Mon Mar 11 13:57 - down   (02:25)
+reboot   system boot  5.15.0-87-generi Mon Mar 11 13:57 - 16:22  (02:25)
+user     :0           :0               Mon Mar 11 13:13 - down   (00:29)
+reboot   system boot  5.15.0-87-generi Mon Mar 11 13:13 - 13:42  (00:29)
+user     :0           :0               Sun Mar 10 20:06 - down   (00:03)
+reboot   system boot  5.15.0-87-generi Sun Mar 10 20:06 - 20:09  (00:03)
+user     :0           :0               Sun Mar 10 16:58 - down   (00:03)
+reboot   system boot  5.15.0-87-generi Sun Mar 10 16:58 - 17:02  (00:03)
+user     :0           :0               Fri Mar  8 12:22 - down   (00:52)
+reboot   system boot  5.15.0-87-generi Fri Mar  8 12:22 - 13:15  (00:52)
+user     :0           :0               Wed Mar  6 22:01 - down   (00:00)
+
+
+7.//Print history of commands in the current session.
+user@hahalya:~$ history
+ 1010  java Account
+ 1011  javac account.java
+ 1012  java Bank
+ 1013  javac aha.java
+ 1014  calbyobj.java
+ 1015  javac calllbyobj.java
+ 1016  javac callbyobj.java
+ 1017  javac aha.java
+ 1018  javac aha.java
+ 1019  javac this.java
+ 1020  java main
+ 1021  javac this.java
+ 1022  java main
+ 1023  javac this.java
+ 1024  java this_age
+ 1025  javac this.java
+ 1026  java this_age
+ 1027  javac super.java
+ 1028  java super_key
+ 1029  javac super.java
+ 1030  class MAIN
+ 1031  javac super.java
+ 1032  java MAIN
+ 1033  javac super.java
+ 1034  java MAIN
+ 1035  javac static.java
+ 1036  javac super.java
+ 1037  java super_key
+ 1038  javac static.java
+ 1039  javac super.java
+ 1040  java Main
+ 1041  javac super.java
+ 1042  java MAIN
+ 1043  javac static.java
+ 1044  javac shape.java
+ 1045  java shape
+ 1046  javac aha.java
+ 1047  java shapes
+ 1048  javac shape.java
+ 1049  javac static.java
+ 1050  javac aha.java
+ 1051  javac aha.java
+ 1052  javac em.java
+ 1053  javac static.java
+ 1054  java static_key
+ 1055  javac emp.java
+ 1056  javac aha.java
+ 1057  javac contractemp.java
+ 1058  java contractemployee
+ 1059  javac contractemp.java
+ 1060  java w6_4
+ 1061  javac aha.java
+ 1062  javac super.java
+ 1063  java MAIN
+ 1064  javac fourdice.java
+ 1065  java dice
+ 1066  3
+ 1067  javac fifbooks.java
+ 1068  java ebooks
+ 1069  javac books
+ 1070  javac fifbooks.java
+ 1071  javac ebooks.java
+ 1072  javac fifbooks.java
+ 1073  javac fourdice.java
+ 1074  javac contractemp.java
+ 1075  java w6_4
+ 1076  javac aha.java
+ 1077  javac contractemp.java
+ 1078  java contractemp
+ 1079  javac -d . triangle.java
+ 1080  javac -d . square.java
+ 1081  javac -d . circle.java
+ 1082  javac shapes.java
+ 1083  java shape
+ 1084  javac -d . CSE.JAVA
+ 1085  javac -d . CSE.java
+ 1086  javac -d . ECE.java
+ 1087  javac -d . CE.java
+ 1088  javac -d . M
+ 1089  javac -d . ME.java
+ 1090  javac Branches.java
+ 1091  java Branches
+ 1092  javac -d . triangle.java
+ 1093  javac -d . square.java
+ 1094  javac -d . circle.java
+ 1095  javac ahape
+ 1096  javac shape
+ 1097  javac -d . circle.java
+ 1098  javac -d . square.java
+ 1099  javac -d . triangle.java
+ 1100  javac shape.java
+ 1101  javac -d . triangle.java
+ 1102  javac -d . square.java
+ 1103  javac -d . circle.java
+ 1104  javac shapes.java
+ 1105  javac -d . ca.java
+ 1106  javac aha.java
+ 1107  javac -d . ca.java
+ 1108  javac aha.java
+ 1109  javac -d . ca.java
+ 1110  javac aha.java
+ 1111  javac -d . ca.java
+ 1112  javac aha.java
+ 1113  javac -d . ca.java
+ 1114  javac -d . Class.java
+ 1115  javac -d . inter.java
+ 1116  javac A.java
+ 1117  java A
+ 1118  javac -d . M.java
+ 1119  javac -d . Inter.java
+ 1120  javac A.java
+ 1121  java A
+ 1122  javac -d . ca.java
+ 1123  javac aha.java
+ 1124  java aha
+ 1125  javac aha.java
+ 1126  javac Shape.java
+ 1127  java Main
+ 1128  javac payable.java
+ 1129  java Main
+ 1130  javac student.java
+ 1131  java Studentfee
+ 1132  javac student.java
+ 1133  java Main
+ 1134  javac payable.java
+ 1135  java payable
+ 1136  javac larger.java
+ 1137  javaWeek1
+ 1138  javac larger.java
+ 1139  java Week1
+ 1140  javac matrixadd.java
+ 1141  javac matrixmul.java
+ 1142  java matrixmulti
+ 1143  javac matrixadd.java
+ 1144  java matrix addition
+ 1145  javac matrixadd.java
+ 1146  java matrixaddition
+ 1147  javac matrixadd.java
+ 1148  java matrixaddition
+ 1149  javac matrixadd.java
+ 1150  java matrixaddition
+ 1151  javac ah.java
+ 1152  java aha
+ 1153  javac 3.unique.java
+ 1154  java UniqueNumber
+ 1155  java UniqueNumbers
+ 1156  javac ah.java
+ 1157  java aha
+ 1158  javac 4dice.java
+ 1159  javac 4Dice.java
+ 1160  javac 4.Dice.java
+ 1161  java Dice
+ 1162  javac 5.Ebook.java
+ 1163  java Ebook
+ 1164  javac fifbooks.java
+ 1165  java ebooks
+ 1166  javac fifbooks.java
+ 1167  java ebooks
+ 1168  javac calbyobj.java
+ 1169  java Week5
+ 1170  javac calbyvalue.java
+ 1171  javac callbyvalue.java
+ 1172  java Week5
+ 1173  javac this_age
+ 1174  javac this.java
+ 1175  java this_age
+ 1176  javac shape.java
+ 1177  java shape
+ 1178  javac ahalya.java
+ 1179  java ahalya
+ 1180  javac a.java
+ 1181  java add
+ 1182  javac a.java
+ 1183  java aDD
+ 1184  javac a.java
+ 1185  java Add
+ 1186  javac a.java
+ 1187  java Add
+ 1188  javac a.java
+ 1189  java text
+ 1190  javac em.java
+ 1191  javac employeextendsjava.java
+ 1192  javac employeextends.java
+ 1193  java Employee
+ 1194  javac employeextends.java
+ 1195  java week
+ 1196  javac houremployee.java
+ 1197  java contractemployee
+ 1198  javac houremployee.java
+ 1199  java testj
+ 1200  javac employee
+ 1201  javac employee.java
+ 1202  javac studen.java
+ 1203  java studen
+ 1204  javac studen.java
+ 1205  java test
+ 1206  javac studen.java
+ 1207  java test
+ 1208  sudo mysql
+ 1209  javac 4.Dice.java
+ 1210  java Dice
+ 1211  sudo mysql
+ 1212  javac product.java
+ 1213  java ahalya
+ 1214  javac fifbooks.java
+ 1215  java ebooks
+ 1216  javac lower.java
+ 1217  java upper
+ 1218  javac sub.java
+ 1219  java Week4
+ 1220  javac equals.java
+ 1221  java ignored
+ 1222  javac index.java
+ 1223  java third
+ 1224  javac concat.java
+ 1225  java four
+ 1226  javac vowel.java
+ 1227  java five
+ 1228  javac length.java
+ 1229  java six
+ 1230  javac reverse.java
+ 1231  java seven
+ 1232  3.unique.java
+ 1233  javac 3.unique.java
+ 1234  java UniqueNumbers
+ 1235  javac 4.Dice.java
+ 1236  java Dice
+ 1237  javac compare.java
+ 1238  java cmpare
+ 1239  javac compare.java
+ 1240  java compare
+ 1241  javac wapper.java
+ 1242  java wapper
+ 1243  javac area.java
+ 1244  java circle
+ 1245  javac area.java
+ 1246  java Demo
+ 1247  javac account.java
+ 1248  java Bank
+ 1249  javac this.java
+ 1250  java this_age
+ 1251  javac super.java
+ 1252  java Main
+ 1253  javac super.java
+ 1254  java MAIN
+ 1255  javac static.java
+ 1256  java static_key
+ 1257  javac shape.java
+ 1258  java shape
+ 1259  javac override.java
+ 1260  java parent
+ 1261  javac override.java
+ 1262  java test
+ 1263  javac overload.java
+ 1264  java test
+ 1265  javac overload.java
+ 1266  java text
+ 1267  javac employeextends.java
+ 1268  java week
+ 1269  javac employeextends.java
+ 1270  javac employeextendsjava.java
+ 1271  javac two.java
+ 1272  java week
+ 1273  javac houremoloyee.java
+ 1274  javac houremployee.java
+ 1275  java test
+ 1276  javac houremployee.java
+ 1277  java testj
+ 1278  javac vehicle.java
+ 1279  javac velhicle.java
+ 1280  java javar
+ 1281  javac studentfee.java
+ 1282  java test
+ 1283  javac studentfee.java
+ 1284  java test
+ 1285  JAVAC CALL_BY_OBJECT.JAVA
+ 1286  javac call_by_object.java
+ 1287  java A
+ 1288  javac call_by_value.java
+ 1289  java A
+ 1290  javac -d . ADD.java
+ 1291  javac -d . SUB.java
+ 1292  javac -d . MULTI.java
+ 1293  javac -d . DIV.java
+ 1294  javac -d . calculator.java
+ 1295  java calculator
+ 1296  javac -d . triangle.java
+ 1297  javac -d . triangle.java
+ 1298  javac -d . square.java
+ 1299  javac -d . circle.java
+ 1300  javac -d . shapes.java
+ 1301  java shape
+ 1302  javac six.java
+ 1303  java six
+ 1304  javac fifth.java
+ 1305  java fifth
+ 1306  javac third.java
+ 1307  java third
+ 1308  javac second.java
+ 1309  java second
+ 1310  javac four.java
+ 1311  java classnfex
+ 1312  javac exceptiond.java
+ 1313  java exceptiond
+ 1314  javac a.java
+ 1315  java single
+ 1316  javac a.java
+ 1317  java single
+ 1318  javac a.java
+ 1319  java single
+ 1320  javac a.java
+ 1321  java single
+ 1322  javac a.java
+ 1323  java single
+ 1324  sudo mysql
+ 1325  javac ca.java
+ 1326  javac exceptiond.java
+ 1327  java exceptiond
+ 1328  javac second.java
+ 1329  java second
+ 1330  javac third.java
+ 1331  java third
+ 1332  javac ahalya
+ 1333  javac ahalya.java
+ 1334  javac aa.java
+ 1335  java ahalya
+ 1336  javac aa.java
+ 1337  java ahalya
+ 1338  javac aa.java
+ 1339  java ahalya
+ 1340  javac aa.java
+ 1341  java ahalya
+ 1342  javac aa.java
+ 1343  java ahalya
+ 1344  javac aa.java
+ 1345  java ahalya
+ 1346  javac aa.java
+ 1347  java ahalya
+ 1348  javac aa.java
+ 1349  java ahalya
+ 1350  javac aa.java
+ 1351  java ahalya
+ 1352  javac aa.java
+ 1353  java ahalya
+ 1354  javac aa.java
+ 1355  java ahalya
+ 1356  javac aa.java
+ 1357  java ahalya
+ 1358  javac aa.java
+ 1359  java ahalya
+ 1360  javac aa.java
+ 1361  java ahalya
+ 1362  javac aa.java
+ 1363  java ahalya
+ 1364  sudo mysql
+ 1365  javac first.java
+ 1366  javac first.java
+ 1367  javac Defaultdate
+ 1368  javac Defaultdate.java
+ 1369  javac first.java
+ 1370  java Defaultdate
+ 1371  javac first.java
+ 1372  java Defaultdate
+ 1373  javac second.java.java
+ 1374  java students
+ 1375  javac second.java
+ 1376  java Seconds
+ 1377  java Students
+ 1378  javac Students.java
+ 1379  java Students
+ 1380  javac first.java
+ 1381  java Defaultdate
+ 1382  javac first.java
+ 1383  java Defaultdate
+ 1384  javac first.java
+ 1385  java Defaultdate
+ 1386  javac first.java
+ 1387  java Defaultdate
+ 1388  javac first.java
+ 1389  java Defaultdate
+ 1390  javac first.java
+ 1391  java Defaultdate
+ 1392  javac first.java
+ 1393  javac first.java
+ 1394  java Defaultdate
+ 1395  javac first.java
+ 1396  java Defaultdate
+ 1397  javac first.java
+ 1398  java Defaultdate
+ 1399  javac first.java
+ 1400  java Defaultdate
+ 1401  javac first.java
+ 1402  java Defaultdate
+ 1403  javac first.java
+ 1404  javac first.java
+ 1405  java Defaultdate
+ 1406  javac first.java
+ 1407  java Defaultdate
+ 1408  javac first.java
+ 1409  java Defaultdate
+ 1410  javac first.java
+ 1411  java Defaultdate
+ 1412  javac first.java
+ 1413  java Defaultdate
+ 1414  javac first.java
+ 1415  java Defaultdate
+ 1416  javac first.java
+ 1417  java Defaultdate
+ 1418  javac first.java
+ 1419  java Defaultdate
+ 1420  javac one.java
+ 1421  java Awtprogram
+ 1422  javac one.java
+ 1423  java Awtprogram
+ 1424  javac one.java
+ 1425  java Awtprogram
+ 1426  javac one.java
+ 1427  java Awtprogram
+ 1428  javac one.java
+ 1429  java Awtprogram
+ 1430  javac one.java
+ 1431  java Awtprogram
+ 1432  javac one.java
+ 1433  java Awtprogram
+ 1434  javac one.java
+ 1435  java Awtprogram
+ 1436  javac one.java
+ 1437  java Awtprogram
+ 1438  javac one.java
+ 1439  java Awtprogram
+ 1440  javac one.java
+ 1441  java Awtprogram
+ 1442  javac one.java
+ 1443  java Awtprogram
+ 1444  sudo mysql
+ 1445  javac a.java
+ 1446  java Students
+ 1447  javac a.java
+ 1448  java Students
+ 1449  javac a.java
+ 1450  java Students
+ 1451  javac a.java
+ 1452  java Students
+ 1453  javac a.java
+ 1454  java Students
+ 1455  javac a.java
+ 1456  java Students
+ 1457  javac a.java
+ 1458  java Students
+ 1459  javac a.java
+ 1460  java Students
+ 1461  javac a.java
+ 1462  java Students
+ 1463  javac a.java
+ 1464  java Students
+ 1465  javac a.java
+ 1466  java Students
+ 1467  javac a.java
+ 1468  java Students
+ 1469  javac a.java
+ 1470  java Students
+ 1471  javac a.java
+ 1472  java Students
+ 1473  javac a.java
+ 1474  java Students
+ 1475  sudo mysql
+ 1476  sudo mysql;
+ 1477  sudo mysql
+ 1478  javac first.java
+ 1479  java Defalultdate
+ 1480  java Defaultdate
+ 1481  javac students.java
+ 1482  javac Students.java
+ 1483  java Student
+ 1484  java Students
+ 1485  javac a.java
+ 1486  javac a.java
+ 1487  JAVAC A.JAVA
+ 1488  javac a.java
+ 1489  javac exceptiond.java
+ 1490  java exceptiond
+ 1491  javac a.java
+ 1492  java a
+ 1493  javac a.java
+ 1494  java a
+ 1495  javac second.java
+ 1496  javac a.java
+ 1497  java a
+ 1498  javac a.java
+ 1499  java a
+ 1500  javac a.java
+ 1501  java a
+ 1502  javac a.java
+ 1503  javac one.java
+ 1504  java Thread
+ 1505  java multi
+ 1506  javac sec.java
+ 1507  java consumer
+ 1508  javac a.java
+ 1509  java consumer
+ 1510  javac three.java
+ 1511  java mul
+ 1512  javac four.java
+ 1513  java main
+ 1514  javac fif.java
+ 1515  javac sec.java
+ 1516  javac -d.a.java
+ 1517  javac -d. a.java
+ 1518  javac -d. Sq.java
+ 1519  javac -d . Sq.java
+ 1520  javac -d . Cr.java
+ 1521  javac -d . Ci.java
+ 1522  javac main.java
+ 1523  javac -d . Squaree.java
+ 1524  javac -d . Trianglee.java
+ 1525  javac -d . Circlee.java
+ 1526  javac Main.java
+ 1527  java Main
+ 1528  javac -d . MME.java
+ 1529  javac -d . MECH.java
+ 1530  java Branch.java
+ 1531  java call
+ 1532  java ahalya
+ 1533  javac -d . Addd.java
+ 1534  javac -d . Subb.java
+ 1535  javac -d . Mull.java
+ 1536  javac Call
+ 1537  javac Call.java
+ 1538  java call
+ 1539  java Call
+ 1540  java calculator
+ 1541  java ahalya
+ 1542  javac -d . Mull.java
+ 1543  java calculation
+ 1544  javac -d . Clas.java
+ 1545  javac -d . Inter.java
+ 1546  javac a.java
+ 1547  java a
+ 1548  javac -d . Clas.java
+ 1549  javac -d . Inter.java
+ 1550  javac a.java
+ 1551  java a
+ 1552  javac a.java
+ 1553  java Main
+ 1554  javac a.java
+ 1555  java main
+ 1556  javac a.java
+ 1557  java main
+ 1558  javac a.java
+ 1559  java Main
+ 1560  javac one.java
+ 1561  java Awtprogram
+ 1562  javac b.java
+ 1563  java Awtprogram
+ 1564  javac b.java
+ 1565  java Awtprogram
+ 1566  javac a.java
+ 1567  javac three.java
+ 1568  java Menu
+ 1569  javac a.java
+ 1570  javac ticket.java
+ 1571  java MovieTheatre
+ 1572  java Main
+ 1573  javac ticket.java
+ 1574  javac cal.java
+ 1575  java gridlayout
+ 1576  javac sm.java
+ 1577  java sm
+ 1578  sudo mysql
+ 1579  javac deepu.java
+ 1580  java deepu
+ 1581  javac deepu.java
+ 1582  java deepu
+ 1583  javac Helloworld.java
+ 1584  java Helloworld.java
+ 1585  javac Helloworld.java
+ 1586  javac hellojava.java
+ 1587  javac Helloworld.java
+ 1588  javac world.java
+ 1589  java world
+ 1590  javac world.java
+ 1591  java world
+ 1592  javac Hello.java
+ 1593  java Hello
+ 1594  javac Hello.java
+ 1595  java Hello.java
+ 1596  javac Hello.java
+ 1597  java Hello
+ 1598  javac calculation.java
+ 1599  javac Simple.java
+ 1600  java cal.java
+ 1601  javac cal.java
+ 1602  javac calculation.java
+ 1603  java calculation
+ 1604  javac calculation.java
+ 1605  java calculation
+ 1606  javac palindrome.java
+ 1607  java palindrome
+ 1608  javac palindrome.java
+ 1609  java palindrome
+ 1610  javac palindrome.java
+ 1611  java palindrome
+ 1612  javac palindrome.java
+ 1613  java palindrome
+ 1614  javac palindrome.java
+ 1615  java palindrome
+ 1616  javac palindrome.java
+ 1617  java palindrome
+ 1618  javac palindrome.java
+ 1619  java palindrome
+ 1620  javac palindrome.java
+ 1621  java palindrome
+ 1622  javac palindrome.java
+ 1623  java palindrome
+ 1624  javac palindrome.java
+ 1625  java palindrome
+ 1626  javac palindrome.java
+ 1627  java palindrome
+ 1628  javac palindrome.java
+ 1629  java palindrome
+ 1630  javac palindrome.java
+ 1631  java palindrome
+ 1632  cp[MyImg]source destination
+ 1633  cp[MyImg.jpg]source destination
+ 1634  ls
+ 1635  ls
+ 1636  mkdir file1
+ 1637  rmdir file1
+ 1638  mkdir ahalya
+ 1639  rmdir ahalya
+ 1640  mkdir ahalya
+ 1641  rmdir ahalya
+ 1642  :+@/54 76t y7guhvn cm,xz./
+ 1643  $OS
+ 1644  OS
+ 1645  os
+ 1646  cp[MyImg]source destination
+ 1647  $ cat>MyImg.jpg
+ 1648  $cat>file1
+ 1649  hello
+ 1650  whoami
+ 1651  id
+ 1652  groups
+ 1653  passwd
+ 1654  who
+ 1655  last
+ 1656  cp
+ 1657  rm
+ 1658  mv
+ 1659  echo
+ 1660  chown
+ 1661  pwd
+ 1662  mkdir
+ 1663  rmdir
+ 1664  multiuser
+ 1665  date
+ 1666  what is my name
+ 1667  my name is ahalya
+ 1668  calender
+ 1669  cal
+ 1670  time
+ 1671  what is the time know
+ 1672  list
+ 1673  clear
+ 1674  ls
+ 1675  ls desktop
+ 1676  lsdesktop
+ 1677  ls-desktop
+ 1678  ls:desktop
+ 1679  ls-a-hisd
+ 1680  ls-a-hird
+ 1681  ls_a_hird
+ 1682  list
+ 1683  ls
+ 1684  ls/n
+ 1685  cal
+ 1686  top
+ 1687  bottom
+ 1688  buttom
+ 1689  clear
+ 1690  drop
+ 1691  Drop
+ 1692  javac quadratic.java
+ 1693  java quadratic
+ 1694  javac prime.java
+ 1695  java prime
+ 1696  javac prime.java
+ 1697  java prime
+ 1698  javac prime.java
+ 1699  java prime
+ 1700  count.c
+ 1701  c count.c
+ 1702  gcc count.c
+ 1703  ./a.out
+ 1704  gcc closetpoints.c
+ 1705  gcc closestpoints.c
+ 1706  gcc closestpoints.c
+ 1707  gcc closestpoints.c -lm
+ 1708  ./a.out
+ 1709  gcc closestpoints.c -lm
+ 1710  ./a.out
+ 1711  699
+ 1712  9
+ 1713  clear
+ 1714  gcc closestpoints.c -lm
+ 1715  ./a.out
+ 1716  gcc closestpoints.c -lm
+ 1717  ./a.out
+ 1718  gcc closestpoints.c -lm
+ 1719  ./a.out
+ 1720  gcc reversecount.c
+ 1721  ./a.out
+ 1722  gcc reversecount.c
+ 1723  ./a.out
+ 1724  gcc reversecount.c
+ 1725  ./a.out
+ 1726  gcc closestpoints.c -lm
+ 1727  ./a.out
+ 1728  gcc count.c
+ 1729  ./a.out
+ 1730  gcc reversecount.c
+ 1731  ./a.out
+ 1732  gcc reversecount.c
+ 1733  ./a.out
+ 1734  gcc reversecount.c
+ 1735  ./a.out
+ 1736  gcc reversecount.c
+ 1737  ./a.out
+ 1738  gcc reversecount.c
+ 1739  ./a.out
+ 1740  gcc reversecount.c
+ 1741  ./a.out
+ 1742  gcc reversecount.c
+ 1743  ./a.out
+ 1744  gcc reversecount.c
+ 1745  ./a.out
+ 1746  gcc reversecount.c
+ 1747  ./a.out
+ 1748  gcc reversecount.c
+ 1749  ./a.out
+ 1750  gcc reversecount.c
+ 1751  ./a.out
+ 1752  gcc reversecount.c
+ 1753  ./a.out
+ 1754  gcc reversecount.c
+ 1755  ./a.out
+ 1756  gcc revoccurance.c
+ 1757  ./a.out
+ 1758  gcc revoccurance.c
+ 1759  ./a.out
+ 1760  gcc closestpoints.c -lm
+ 1761  ./a.out
+ 1762  gcc closestpoints.c -lm
+ 1763  ./a.out
+ 1764  cat>file.txt
+ 1765  rm file.txt
+ 1766  cat>a
+ 1767  cat>grep.txt
+ 1768  cat> grep.txt
+ 1769  grep "boy" grepfile.txt 
+ 1770  grep "boy" grep.txt 
+ 1771  rm grep
+ 1772  rm grep.txt
+ 1773  grep "welcome" grep.txt
+ 1774  cat > grep.txt
+ 1775  rm grep.txt
+ 1776  cat >grep.txt
+ 1777  grep -h "ubuntu" grep.txt
+ 1778  grep -n "ubuntu" grep.txt
+ 1779  grep -n "RGUKT" grep.txt
+ 1780  grep -v 'ahalya' grep.txt
+ 1781  grep -e "a",-e "l" grep.txt
+ 1782  grep -e "a" -e "l" grep.txt
+ 1783  grep -o 'to' grep.txt
+ 1784  grep -o 'hii' grep.txt
+ 1785  cat > month.txt
+ 1786  sort -M month.txt
+ 1787  cat >numbers.txt
+ 1788  sort -N month.txt
+ 1789  sort -N numbers.txt
+ 1790  sort -u numbers.txt
+ 1791  cat > setfile.txt
+ 1792  set 's/anu/' setfile.txt
+ 1793  set 's/ANU/' setfile.txt
+ 1794  sed 's/ANU/' setfile.txt
+ 1795  sed 's/anu/ANU/' setfile.txt
+ 1796  sed 's/anu/ANU/ahalya/AHALYA' setfile.txt
+ 1797  sed 's/anu/ANU/ahalya/AHALYA/' setfile.txt
+ 1798  SED '/anu/d' setfile.txt
+ 1799  sed '/anu/d' setfile.txt
+ 1800  sed 's/anu/' setfile.txt
+ 1801  sed 's/anu/ANU/' setfile.txt
+ 1802  sed 's/anu/ANU/' grep.txt
+ 1803  cat > grep.txt
+ 1804  cat > awkfile.txt
+ 1805  rm awkfile.txt
+ 1806  cat > awkfile.txt
+ 1807  awk '{print $3,$4}' awkfile.txt
+ 1808  awk '{print $4,$5}' awkfile.txt
+ 1809  awk '{print $5,$6}' awkfile.txt
+ 1810  awk '{print n,$5}' awkfile.txt
+ 1811  awk '{print n,$3}' awkfile.txt
+ 1812  awk '{print n,$3,$2}' awkfile.txt
+ 1813  awk '{print n,$3,$2,$1}' awkfile.txt
+ 1814  shutdown -r+1
+ 1815  shutdown-r+1
+ 1816  chmod u+x numbers.txt
+ 1817  chmod u-x numbers.txt
+ 1818  chmod u+x numbers.txt
+ 1819  gcc quick.c
+ 1820  ./a.out
+ 1821  gcc quick.c
+ 1822  ./a.out
+ 1823  gcc merge.c
+ 1824  ./a.out
+ 1825  gcc merge.c
+ 1826  ./a.out
+ 1827  gcc knapsack.c
+ 1828  sudo apt update
+ 1829  sudo apt get -install texstudio
+ 1830  sudo apt -get install texstudio
+ 1831  sudo apt-get install texstudio
+ 1832  javac sort.java
+ 1833  java sort
+ 1834  javac sort.java
+ 1835  gcc closestpoints.c -lm
+ 1836  javac sort.java
+ 1837  java sort
+ 1838  cd Downloads
+ 1839  ls
+ 1840  sudo apt install ./code_1.88.0-1712152114_amd64.deb-y
+ 1841  sudo apt install ./code_1.88.0-1712152114_amd64.deb -y
+ 1842  code .
+ 1843  gcc fibhonaci.c
+ 1844  gcc fibhonavi.c
+ 1845  gcc fibrecursive.c
+ 1846  ./a.out
+ 1847  gcc fibrecursive.c
+ 1848  ./a.out
+ 1849  gcc fibrecursive.c
+ 1850  ./a.out
+ 1851  gcc fibrecursive.c
+ 1852  ./a.out
+ 1853  gcc fibrecursive.c
+ 1854  ./a.out
+ 1855  gcc fibrecursive.c
+ 1856  ./a.out
+ 1857  gcc fibrecursive.c
+ 1858  ./a.out
+ 1859  gcc fibrecursive.c
+ 1860  ./a.out
+ 1861  gcc knapsack.c
+ 1862  ./a.out
+ 1863  gcc a.java
+ 1864  gcc a.c
+ 1865  clear
+ 1866  gcc a.c
+ 1867  clear
+ 1868  gcc a.c
+ 1869  clear
+ 1870  gcc a.c
+ 1871  ./a.out
+ 1872  gcc closestpoints.c
+ 1873  ./a.out
+ 1874  gcc closestpoints.c
+ 1875  gcc string_match.c
+ 1876  ./a.out
+ 1877  gcc string_match.c
+ 1878  ./a.out
+ 1879  gcc string_match.c
+ 1880  gcc string_count.c
+ 1881  ./a.out
+ 1882  gcc count.c
+ 1883  ./a.out
+ 1884  gcc reversecount.c
+ 1885  ./a.out
+ 1886  gcc reverse_string.c
+ 1887  ./a.out
+ 1888  gcc reverse_string.c
+ 1889  ./a.out
+ 1890  gcc string_skip.c
+ 1891  gcc string_skip_n.c
+ 1892  ./a.out
+ 1893  gcc string_skip_n.c
+ 1894  ./a.out
+ 1895  gcc string_skip.c
+ 1896  gcc skip_string.c
+ 1897  ./a.out
+ 1898  gcc skip_string.c
+ 1899  ./a.out
+ 1900  ./a.gcc a.c
+ 1901  gcc a.c
+ 1902  ./a.out
+ 1903  sudo groupadd tomcat
+ 1904  sudo apt update
+ 1905  sudo groupadd tomcat
+ 1906  sudo apt update
+ 1907  wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.88/bin/apache-tomcat-9.0.88.tar.gz.sha512
+ 1908  tar -xzf apache-tomcat-9.0.88.tar.gz
+ 1909  tar -xzf apache-tomcat-9.0.45.tar.gz
+ 1910  tar -xzf apache-tomcat-9.0.88.tar.gz.asc
+ 1911  sudo apt install default jdk
+ 1912  sudo apt install default-jdk
+ 1913  clear
+ 1914  sudo apt install tomcat9
+ 1915  sudo system1 start tomcat9
+ 1916  sudo systemct1 start tomcat9
+ 1917  sudo systemctl start tomcat9
+ 1918  sudo systemctl status tomcat9
+ 1919  sudo chmod 777 /var/lib/tomcat9/webapps
+ 1920  sudo chmod 777 var/lib/tomcat9/websapps
+ 1921  sudo apt update
+ 1922  sudo apt install tomcat9
+ 1923  sudo systeml start tomacat9
+ 1924  sudo systemctl start tomacat9
+ 1925  sudo apt install default-jdk
+ 1926  sudo apt install tomcat9
+ 1927  sudo systemctl start tomcat9
+ 1928  sudo systemctl status tomcat9
+ 1929  sudo chmod 644 one.html
+ 1930  sudo chmod 644 ser.html
+ 1931  sudo chmod 644 one.html
+ 1932  sudo chmod ~7
+ 1933  sudo chmod 777 /var/lib/tomcat/lib
+ 1934  sudo chmod 777 /var/lib/tomcat9/lib
+ 1935  create database MyProjectDatabase;
+ 1936  sudo systemctl stop tomcat9
+ 1937  sudo systemctl start tomcat9
+ 1938  sudo mysql
+ 1939  chmod 644 RetrieveData.jsp
+ 1940  chmod 644 InsertData.jsp
+ 1941  chmod 644 takeData.html
+ 1942  ps -ef
+ 1943  touch[file1] [file2];
+ 1944  touch[file1] [file2]
+ 1945  gcc knapsack.c
+ 1946  ./a.out
+ 1947  cat>file1
+ 1948  cp file1 file2
+ 1949  mv file1 file2
+ 1950  mkdir dir2
+ 1951  cd dir2
+ 1952  which -a cat
+ 1953  cal
+ 1954  date
+ 1955  who
+ 1956  is
+ 1957  ls
+ 1958  cat>grepfile.txt
+ 1959  grep "welcome" grepfile.txt
+ 1960  grep -h "to" grepfile.txt
+ 1961  grep -n "one" grepfile.txt
+ 1962  grep -e "linux" -e "unix" grepfile.txt
+ 1963  grep -e "linux" -v "one" grepfile.txt
+ 1964  grep -v "one" grepfile.txt
+ 1965  grep -o "is" grepfile.txt
+ 1966  grep -o "o" grepfile.txt
+ 1967  grep -o "u" grepfile.txt
+ 1968  //sort
+ 1969  cat>monthfile.txt
+ 1970  sort -n number.txt
+ 1971  sort -n month.txt
+ 1972  sort -n monthfile.txt
+ 1973  sort monthfile.txt
+ 1974  sort -M monthfile.txt
+ 1975  cat>number.txt
+ 1976  sort -n number.txt
+ 1977  sort -u number.txt
+ 1978  cat>sedfile.txt
+ 1979  exit:
+ 1980  sort -u number.txt
+ 1981  cat>sedfile.txt
+ 1982  sed 's/ahalya/AHALYA' sedfile.txt
+ 1983  sed 's/ahalya/AHALYA/' sedfile.txt
+ 1984  cat>sedfile.txt
+ 1985  sed 's/ahalya/AHALYA/' sedfile.txt
+ 1986  sed '/from/d' sedfile.txt
+ 1987  sed '/rgukt/d' sedfile.txt
+ 1988  sed '/rgukt/d' grepfile.txt
+ 1989  cat>awtfile.txt
+ 1990  awk '{print $1,$3}' awtfile.txt
+ 1991  awk '{print NR}' awtfile.txt
+ 1992  awk '{print NR,$1}' awtfile.txt
+ 1993  awk '{print NR,$3}' awtfile.txt
+ 1994  awk '{print NR,$0}' awtfile.txt
+ 1995  awk 'NR=2{print NR,$0}' awtfile.txt
+ 1996  who ami
+ 1997  whoami
+ 1998  id
+ 1999  groups
+ 2000  password
+ 2001  who
+ 2002  last
+ 2003  clear
+ 2004  whoami
+ 2005  id
+ 2006  groups
+ 2007  password
+ 2008  last
+ 2009  history
+
+8.//Create a new file.
+user@hahalya:~$ touch file1
+user@hahalya:~$ touch file2
+
+9.//Concatenate the  two files and print to stdout.
+user@hahalya:~$ cat>file1
+helllo world
+
+10.//Remove files and  directories.           
+user@hahalya:~$ rm file1
+
+11.//Make a directory.
+user@hahalya:~$ cat>file1
+hello world
+^C
+
+12.//Copy the content from file1 to file2
+user@hahalya:~$ cp file1 file2
+
+13.//Create empty files callled 'file1' and 'file2'  
+user@hahalya:~$ mv file1 file2
+
+14.//Folder is created with dir1 name
+user@hahalya:~$ mkdir dir1
+
+15.//Change working directory to dir1,
+user@hahalya:~$ cd dir1
+
+16.//Remove a directory.
+user@hahalya:~/dir1$ rmdir dir1
+
+17.//Print the present working direcory.
+user@hahalya:~/dir1$ pwd
+
+18.//List all directory contents.
+user@hahalya:~/dir1$ ls
+user@hahalya:~/dir1$ ls -alt
+total 8
+drwxrwxr-x  2 user user 4096 Apr 25 14:21 .
+drwxrwxr-x 33 user user 4096 Apr 25 14:21 ..
+user@hahalya:~/dir1$ ls -l
+total 0
+user@hahalya:~/dir1$ ls -ltr
+total 0
+user@hahalya:~/dir1$ ls -a
+.  ..
+19.//List all paths from where 'cat' can run.
+user@hahalya:~/dir1$ which -a cat
+/usr/bin/cat
+/bin/cat
+
+20.//Execute a command assome other user.
+user@hahalya:~/dir1$ sudo ls
+[sudo] password for user:
+
+21.//Used to search for files and directories as mentioned in the expressions. 
+user@hahalya:~/dir1$ find
+.
+
+22.//Show the no.of free blocks for the mounted file system. 
+user@hahalya:~/dir1$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+udev             3910084        0   3910084   0% /dev
+tmpfs             790156     2180    787976   1% /run
+/dev/nvme0n1p2 244506940 51510988 180502896  23% /
+tmpfs            3950780        0   3950780   0% /dev/shm
+tmpfs               5120        4      5116   1% /run/lock
+tmpfs            3950780        0   3950780   0% /sys/fs/cgroup
+/dev/loop0           128      128         0 100% /snap/bare/5
+/dev/loop3        358144   358144         0 100% /snap/gnome-3-38-2004/140
+/dev/loop2         65536    65536         0 100% /snap/core20/2182
+/dev/loop1         65536    65536         0 100% /snap/core20/2264
+/dev/loop4        358144   358144         0 100% /snap/gnome-3-38-2004/143
+/dev/loop7         12672    12672         0 100% /snap/snap-store/959
+/dev/loop6         47104    47104         0 100% /snap/snap-store/638
+/dev/loop9        516352   516352         0 100% /snap/gnome-42-2204/172
+/dev/loop8         76032    76032         0 100% /snap/core22/1122
+/dev/loop5         93952    93952         0 100% /snap/gtk-common-themes/1535
+/dev/loop12       517248   517248         0 100% /snap/gnome-42-2204/176
+/dev/loop11        66816    66816         0 100% /snap/gtk-common-themes/1519
+/dev/loop10        75904    75904         0 100% /snap/core22/1033
+/dev/loop13        41472    41472         0 100% /snap/snapd/20671
+/dev/loop14        40064    40064         0 100% /snap/snapd/21184
+/dev/nvme0n1p1    523248     6216    517032   2% /boot/efi
+tmpfs             790156       48    790108   1% /run/user/1000
+
+23.//Display the calender.
+user@hahalya:~/dir1$ cal
+     April 2024       
+Su Mo Tu We Th Fr Sa  
+    1  2  3  4  5  6  
+ 7  8  9 10 11 12 13  
+14 15 16 17 18 19 20  
+21 22 23 24 25 26 27  
+28 29 30              
+             
+             
+             24.//Display data.         
+user@hahalya:~/dir1$ date
+Thursday 25 April 2024 02:24:31 PM UTC
+user@hahalya:~/dir1$ 
+
