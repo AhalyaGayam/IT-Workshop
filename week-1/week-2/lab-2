@@ -1,0 +1,196 @@
+1.user@hahalya:~$ cat>grepfile.txt
+welcome to ubuntu
+linux and ubuntu are commands
+rgukt is one of the most greatest community
+^C
+
+2.// //The grep command in Unix/Linux is a powerful tool used for searching and manipulating text patterns within files.//
+user@hahalya:~$ grep "welcome" grepfile.txt 
+welcome to ubuntu
+
+3.//Display the matched lines, but do not display the filenames.//
+user@hahalya:~$ grep -h "to" grepfile.txt  
+welcome to ubuntu
+
+
+4.//Display the matched lines and their line numbers.//user@hahalya:~$ grep -n "one" grepfile.txt 
+3:rgukt is one of the most greatest community
+
+5.//-e : Specifies expression with this option. Can use multiple times.//
+ user@hahalya:~$ grep -e "linux" -e "unix" grepfile.txt  
+linux and ubuntu are commands
+
+6.//-v: This prints out all the lines that do not matches the pattern//
+user@hahalya:~$ grep -v "one" grepfile.txt  
+welcome to ubuntu
+linux and ubuntu are commands
+
+7.//-o :Print only the matched parts of a matching line, with each such part on a
+user@hahalya:~$ grep -o "is" grepfile.txt 
+separate output line.//
+is
+
+8.//o :Print only the matched parts of a matching line, with each such part on a
+separate output line.//
+user@hahalya:~$ grep -o "o" grepfile.txt  
+o
+o
+o
+o
+o
+o
+o
+
+9.user@hahalya:~$ grep -o "u" grepfile.txt    //o :Print only the matched parts of a matching line, with each such part on a
+separate output line.//
+u
+u
+u
+u
+u
+u
+u
+u
+u
+
+10.//to create file//
+user@hahalya:~$ cat>monthfile.txt   
+december
+january
+june
+februaty
+october
+march
+
+11.user@hahalya:~$ sort -n monthfile.txt
+december
+februaty
+january
+june
+march
+october
+
+12.user@hahalya:~$ sort monthfile.txt
+december
+februaty
+january
+june
+march
+october
+
+13.//used to get the data in sorted order//
+user@hahalya:~$ sort -M monthfile.txt   
+january
+februaty
+march
+june
+october
+december
+
+14.user@hahalya:~$ cat>number.txt
+3
+1
+8
+7
+9
+66
+22
+^C
+
+15. //-n used to sort the numbers//
+user@hahalya:~$ sort -n number.txt  
+1
+3
+7
+8
+9
+22
+66
+
+16.//sort command is used to sort
+user@hahalya:~$ sort -u number.txt   
+the lines of a text file or input stream. It's a versatile command with
+various options to customize the sorting behavior.//
+1
+22
+3
+66
+7
+8
+9
+
+17.//*SED is a powerful text stream editor. Can do insertion, deletion,
+search and replace(substitution).
+ *SED command in unix supports regular expression which allows it
+perform complex pattern matching.//
+user@hahalya:~$ sed 's/ahalya/AHALYA/' sedfile.txt 
+user@hahalya:~$ cat>sedfile.txt  
+hii
+iam ahalya
+iam from cse
+^C
+
+18.//Replacing or substituting string ://
+user@hahalya:~$ sed 's/ahalya/AHALYA/' sedfile.txt
+hii
+iam AHALYA
+iam from cse
+
+19.user@hahalya:~$ sed '/from/d' sedfile.txt
+hii
+iam ahalya
+
+20.user@hahalya:~$ sed '/rgukt/d' grepfile.txt
+welcome to ubuntu
+linux and ubuntu are commands
+
+21.//awk operates on a
+line-by-line basis, processing each line of input according to the specified command.//
+user@hahalya:~$ cat>awtfile.txt  
+ahalya storage id 1349
+anu window id 1346
+harisha unix id 1569
+deepthi linux id 0112
+
+22.user@hahalya:~$ awk '{print $1,$3}' awtfile.txt
+ahalya id
+anu id
+harisha id
+deepthi id
+
+23.//To count the lines in a file.//
+user@hahalya:~$ awk '{print NR}' awtfile.txt  
+1
+2
+3
+4
+
+24.//To return the first column/item from awtfile.txt//user@hahalya:~$ awk '{print NR,$1}' awtfile.txt  
+1 ahalya
+2 anu
+3 harisha
+4 deepthi
+
+25.//To return the third column/item from awtfile.txt.
+user@hahalya:~$ awk '{print NR,$3}' awtfile.txt  
+1 id
+2 id
+3 id
+4 id
+
+26.//To return the zeroth column/item from awtfile.txt:
+user@hahalya:~$ awk '{print NR,$0}' awtfile.txt  
+1 ahalya storage id 1349
+2 anu window id 1346
+3 harisha unix id 1569
+4 deepthi linux id 0112
+
+27.//return all the columns from awtfile.txt.
+user@hahalya:~$ awk 'NR=2{print NR,$0}' awtfile.txt   
+2 ahalya storage id 1349
+2 anu window id 1346
+2 harisha unix id 1569
+2 deepthi linux id 0112
+user@hahalya:~$ 
+
+
